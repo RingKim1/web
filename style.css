@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+}
+
+/* id > Class > Tag 순서로 정해짐(구체적일 수록 우선순위 높음), 같은 선택자일 경우 순서에 따라 정해짐*/
+/* id선택자 */
+#active {
+    color: red;
+}
+
+/* Class가 saw인 선택자를 모두 선택 */
+.saw {
+    color: gray;
+}
+
+/* 선택자(Selector) */
+a {
+    /* 효과(Declaration) Property : Value;*/
+    color: black;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 45px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    margin: 0;
+    padding: 20px;
+}
+#grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+
+#grid ol {
+    border-right: 1px solid gray;
+    width: 100px;
+    margin: 0;
+    padding: 20px;
+    padding-left: 33px;
+}
+
+#article {
+    padding-left: 30px;
+}
+@media(max-width: 800px) {
+    #grid {
+        display: block;
+    }
+    #grid ol {
+        border-right: none;
+    }
+    h1 {
+        border-bottom: none;
+    }
+}
