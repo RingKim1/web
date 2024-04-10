@@ -16,7 +16,6 @@ body {
 /* 선택자(Selector) */
 a {
     /* 효과(Declaration) Property : Value;*/
-    color: black;
     text-decoration: none;
 }
 
